@@ -1,10 +1,11 @@
 #!/bin/bash
 
-RAWDIR="/mnt/eifiler03/geomatique/01_projects/CIME/sky_segmentation/DATA/RAW/"
 CONVERT=False
 PREDICT=True
 
-for i in {1..1}; do
+RAWDIR="/mnt/eifiler03/geomatique/01_projects/CIME/sky_segmentation/DATA/RAW/"
+
+for i in {1..3}; do
     if [ ${CONVERT} == "True" ]; then
         for img in "${RAWDIR}"${i}/*.JPG; do
             f=${img##*/};
